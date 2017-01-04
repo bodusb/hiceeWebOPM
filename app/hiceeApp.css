@@ -1,0 +1,20 @@
+.red{background-color: red;}
+.lightblue{background-color: lightblue;}
+.lightgreen{background-color: lightgreen;}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+md-toolbar h3 {
+    margin: auto;
+    font-weight: 500;
+}
+
+.transparent{
+  background-color: transparent;
+}

@@ -1,0 +1,18 @@
+<div id="base_tab" ng-app="baseTabs" ng-controller="tabCtrls" ng-cloak>
+    <!-- TABS -->
+
+    <md-nav-bar md-selected-nav-item="currentNavItem">
+        <md-nav-item md-nav-click="goto('app/defaultStructure/default_contentA.html')" name="page1">Page One</md-nav-item>
+        <md-nav-item md-nav-sref="goto('app/defaultStructure/default_contentB.html')" name="page2">Page Two</md-nav-item>
+    </md-nav-bar>
+
+    <!-- TABS 
+
+        <div class="ext-content">
+      External content for `<span>{{currentNavItem}}</span>`
+    </div>
+    <ng-include src='currentNavItem'></ng-include>
+-->
+
+
+</div>

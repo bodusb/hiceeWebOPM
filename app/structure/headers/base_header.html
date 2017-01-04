@@ -1,0 +1,51 @@
+<div id="default-header">
+    {{text}}
+    <!-- Header Toolbar -->
+    <md-toolbar class="md-toolbar-tools" layout="row" layout-xm="column" layout-align="space-between center">
+        <!-- Palette Toggle button -->
+        <div ng-app="basePalette" ng-controller="paletteCtrls">
+            <md-button class="md-icon-button" aria-label="Toggle Palette" ng-click="togglePalette()">
+                <md-tooltip md-direction="bottom">
+                    Toggle Palette Menu
+                </md-tooltip>
+                <md-icon md-svg-src="app/assets/menu.svg"></md-icon>
+            </md-button>
+        </div>
+
+        <!-- Title and CurrentTab bottom menu button -->
+        <spam flex></spam>
+        <div ng-app="baseHeader" ng-controller="headerCtrls">
+            <md-button aria-label="Page Information" ng-click="titleClick()">
+                <md-tooltip md-direction="bottom">
+                    Toggle Title and Page Bottom Menu
+                </md-tooltip>
+                {{pageLabel}}
+            </md-button>
+        </div>
+        <spam flex></spam>
+
+        <div layout="row">
+            <!-- Connection/Conf BUTTON -->
+            <div>
+                <md-button class="md-icon-button" aria-label="Connect">
+                    <md-tooltip md-direction="bottom">
+                        Toggle Configuration Menu
+                    </md-tooltip>
+                    <md-icon md-svg-src="app/assets/male-user.svg"></md-icon>
+                </md-button>
+            </div>
+            <!-- Inspector Toggle button -->
+            <div ng-app="baseInspector" ng-controller="inspectorCtrls">
+                <md-button class="md-icon-button" aria-label="Toggle Inspector" ng-click="toggleInspector()">
+                    <md-tooltip md-direction="bottom">
+                        Toggle Inspector Menu
+                    </md-tooltip>
+                    <md-icon md-svg-src="app/assets/menu.svg"></md-icon>
+                </md-button>
+            </div>
+
+        </div>
+
+    </md-toolbar>
+
+</div>
