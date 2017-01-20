@@ -22,6 +22,41 @@
         }
     ]);    
 
+    // Project Inpector Controller
+    baseInspector.controller('projectCtrl', ['$scope', '$mdSidenav',
+        function ($scope, $mdSidenav, dataShare) {
+
+        }
+    ]);
+
+    // OPM Model Inpector Controller
+    baseInspector.controller('opmCtrl', ['$scope', '$mdSidenav',
+        function ($scope, $mdSidenav, dataShare) {
+
+        }
+    ]);
+
+    // OPM Relation Inpector Controller
+    baseInspector.controller('relationCtrl', ['$scope', '$mdSidenav',
+        function ($scope, $mdSidenav, dataShare) {
+
+        }
+    ]);
+
+    // OPM Thing Inpector Controller
+    baseInspector.controller('thingCtrl', ['$scope', '$mdSidenav',
+        function ($scope, $mdSidenav, dataShare) {
+
+        }
+    ]);    
+
+    // OPM Link Inpector Controller
+    baseInspector.controller('linkCtrl', ['$scope', '$mdSidenav',
+        function ($scope, $mdSidenav, dataShare) {
+
+        }
+    ]);     
+
     // inspector directives
     baseInspector.directive('inspector', function () {
         return {

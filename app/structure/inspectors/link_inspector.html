@@ -1,0 +1,93 @@
+<!-- Link Inspector  -->
+<div id='link_inspector' layout="column" layout-padding>
+    <md-content>
+        <form name="current">
+
+            <md-divider></md-divider>
+
+            <md-input-container id='linkType' layout="row" class="md-block" flex>
+                <label>type</label>
+                <md-select ng-model="link.type">
+                    <md-option><em>None</em></md-option>
+                    <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                </md-select>
+            </md-input-container>
+
+            <md-input-container id='linkLogic' layout="row" class="md-block" flex>
+                <label>logic</label>
+                <md-select ng-model="link.logic">
+                    <md-option><em>None</em></md-option>
+                    <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                </md-select>
+            </md-input-container>
+
+            <md-input-container id='linkControl' layout="row" class="md-block" flex>
+                <label>control</label>
+                <md-select ng-model="link.control">
+                    <md-option><em>None</em></md-option>
+                    <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                </md-select>
+            </md-input-container>
+
+            <md-divider></md-divider>
+
+            <md-input-container id='linkCentralTag' layout="row" flex>
+                <label>central tag</label>
+                <input ng-model="link.centralTag">
+            </md-input-container>
+
+
+            <div layout="row" flex>
+                <md-input-container id='linkOrigin' layout="row" class="md-block" flex>
+                    <label>origin</label>
+                    <md-select ng-model="link.origin">
+                        <md-option><em>None</em></md-option>
+                        <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                    </md-select>
+                </md-input-container>
+
+                <md-input-container id='linkOriginTag'>
+                    <label>tag</label>
+                    <input ng-model="link.originTag">
+                </md-input-container>
+            </div>
+
+
+
+            <div layout="row" flex>
+                <md-input-container id='linkDestination' layout="row" class="md-block" flex>
+                    <label>destination</label>
+                    <md-select ng-model="link.destination">
+                        <md-option><em>None</em></md-option>
+                        <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                    </md-select>
+                </md-input-container>
+
+                <md-input-container id='linkDestinationTag'>
+                    <label>tag</label>
+                    <input ng-model="link.destinationTag">
+                </md-input-container>
+            </div>
+
+<div md-color-picker label="stroke color"
+    ng-model="link.strokeColor"></div>
+
+            <md-divider></md-divider>
+            <div layout="row" layout-align="center center" flex>
+                <md-button class="md-raised md-warn" id='thingDelete'>delete</md-button>
+            </div>
+            <md-divider></md-divider>
+
+        </form>
+    </md-content>
+</div>

@@ -1,0 +1,55 @@
+<!-- Thing Inspector  -->
+<div id='thing_inspector' layout="column" layout-padding>
+    <md-content>
+        <form name="current">
+
+            <md-divider></md-divider>
+
+            <md-input-container id='thingType' layout="row" class="md-block" flex>
+                <label>type</label>
+                <input ng-model="thing.type" disabled>
+            </md-input-container>
+
+            <md-input-container id='thingText' layout="row" flex>
+                <label>name</label>
+                <input ng-model="thing.text">
+            </md-input-container>
+
+            <md-divider></md-divider>
+
+            <div layout="row" flex>
+                <md-input-container flex>
+                    <label>w</label>
+                    <input flex type="number" ng-model="thing.width" aria-label="thing width">
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>h</label>
+                    <input flex type="number" ng-model="thing.height" aria-label="thing height">
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>x</label>
+                    <input flex type="number" ng-model="thing.x" aria-label="thing x">
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>y</label>
+                    <input flex type="number" ng-model="thing.y" aria-label="thing y">
+                </md-input-container>
+            </div>
+
+            <div md-color-picker label="fill color" ng-model="thing.fillColor"></div>
+
+            <div md-color-picker label="stroke color" ng-model="thing.strokeColor"></div>
+
+            <md-divider></md-divider>
+            <div layout="row" layout-align="center center" flex>
+                <md-button class="md-raised md-warn" id='thingDelete'>delete</md-button>
+                <md-button class="md-raised" id='thingZoom'>zoom</md-button>
+            </div>
+            <md-divider></md-divider>
+
+        </form>
+    </md-content>
+</div>

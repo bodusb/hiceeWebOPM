@@ -1,0 +1,38 @@
+<!-- Model Inspector  -->
+<div id='model_inspector' layout="column" layout-padding>
+    <md-content>
+        <form name="currentModel">
+            <md-divider></md-divider>
+            <md-input-container id='modelName' layout="row" flex>
+                <label>name</label>
+                <input ng-model="model.name">
+            </md-input-container>
+
+            <md-input-container id='modelUpdateDate' layout="row" flex>
+                <label>last update date</label>
+                <md-datepicker ng-model="model.updateDate"></md-datepicker>
+            </md-input-container>
+
+            <div md-color-picker label="fill color" ng-model="model.fillColor"></div>
+
+            <div md-color-picker label="stroke color" ng-model="model.strokeColor"></div>
+
+
+            <md-divider></md-divider>
+            <div layout="row" layout-align="center center" flex>
+                <md-button class="md-raised" id='modelNewView'>Create View</md-button>
+                <md-button class="md-raised" id='projDelete'>Delete</md-button>
+            </div>
+
+
+
+            <md-divider></md-divider>
+
+            <div layout="row" layout-align="center center" flex>
+                <md-button class="md-raised" id='modelSave'>Save</md-button>
+                <md-button class="md-raised" id='modelDelete'>Delete</md-button>
+            </div>
+            <md-divider></md-divider>
+        </form>
+    </md-content>
+</div>

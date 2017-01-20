@@ -1,0 +1,56 @@
+<!-- Model Relation Inspector  -->
+<div id='relation_inspector' layout="column" layout-padding>
+    <md-content>
+        <form name="currentRelation">
+            <md-divider></md-divider>
+            <md-input-container id='relationTag' layout="row" flex>
+                <label>text</label>
+                <input ng-model="relation.tag">
+            </md-input-container>
+
+            <md-input-container id='relationTag' layout="row" class="md-block" flex>
+                <label>type</label>
+                <md-select ng-model="relation.type">
+                    <md-option><em>None</em></md-option>
+                    <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                </md-select>
+            </md-input-container>
+
+            <div layout="row" layout-align="center center" flex>
+                <md-input-container id='relationTag' layout="row" class="md-block" flex>
+                    <label>destination</label>
+                    <md-select ng-model="relation.type">
+                        <md-option><em>None</em></md-option>
+                        <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                    </md-select>
+                </md-input-container>
+            </div>
+
+            <div layout="row" layout-align="center center" flex>
+                <md-input-container id='relationTag' layout="row" class="md-block" flex>
+                    <label>destination</label>
+                    <md-select ng-model="relation.type">
+                        <md-option><em>None</em></md-option>
+                        <!--  <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+                        {{state.abbrev}}
+                    </md-option> -->
+                    </md-select>
+                </md-input-container>
+            </div>
+
+            <div md-color-picker label="stroke color" ng-model="relation.strokeColor"></div>
+
+
+            <md-divider></md-divider>
+
+            <div layout="row" layout-align="center center" flex>
+                <md-button class="md-raised" id='relationDelete'>Delete</md-button>
+            </div>
+            <md-divider></md-divider>
+        </form>
+    </md-content>
+</div>

@@ -1,0 +1,36 @@
+<!-- Project Inspector  -->
+<div id='project_inspector' layout="column" layout-padding>
+    <md-content>
+        <form name="current">
+
+            <md-divider></md-divider>
+            <md-input-container id='projName' layout="row" flex>
+                <label>name</label>
+                <input ng-model="proj.name">
+            </md-input-container>
+
+            <md-input-container id='proOwner' layout="row" flex>
+                <label>owner</label>
+                <input ng-model="proj.owner">
+            </md-input-container>
+
+            <md-input-container id='projCreatedDate' layout="row" flex>
+                <label>creation date</label>
+                <md-datepicker ng-model="proj.createdDate"></md-datepicker>
+            </md-input-container>
+
+            <md-input-container id='projUpdateDate' layout="row" flex>
+                <label>last update date</label>
+                <md-datepicker ng-model="proj.updateDate"></md-datepicker>
+            </md-input-container>
+
+            <md-divider></md-divider>
+            <div layout="row" layout-align="center center" flex>
+                <md-button class="md-raised" id='projSave'>Save</md-button>
+                <md-button class="md-raised md-warn" id='projDelete'>Delete</md-button>
+            </div>
+            <md-divider></md-divider>
+
+        </form>
+    </md-content>
+</div>

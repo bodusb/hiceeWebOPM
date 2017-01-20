@@ -3,6 +3,7 @@
 
 <head>      
   <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+  <link rel="stylesheet" href="node_modules/md-color-picker/dist/mdColorPicker.min.css">
   <link rel="stylesheet" href="app/hiceeApp.css">
 
   <!-- Angular Material requires Angular.js Libraries -->
@@ -11,6 +12,9 @@
   <script src="node_modules/angular-aria/angular-aria.js"></script>
   <script src="node_modules/angular-material/angular-material.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="node_modules/ng-file-upload/dist/ng-file-upload.js"> </script>
+  <script src="node_modules/tinycolor2/dist/tinycolor-min.js"></script>
+  <script src="node_modules/md-color-picker/dist/mdColorPicker.min.js"></script>
 
   <!-- Applicatino Javascript Files -->
   <script src="app/scripts/header.js"></script>
@@ -25,16 +29,9 @@
   <title>HICEE Specialist Model Environment</title>
 </head>
 
-<body>
+<body ng-app="mainApp">
 
-  <!-- HTML Controls goes here-->
-
-  <!-- Main page 
-  <div ng-app="mainApp">
-    <main-page></main-page>
-  </div>
--->  
-
+    <div ui-view></div>
 
 </body>
 

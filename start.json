@@ -1,0 +1,45 @@
+{
+	"author": "Christopher Cerqueira",
+	"creationDate": "2016-12-05",
+	"updateDate": "2017-01-05",
+	"models": [
+		{
+			"name": "Model 1",
+			"id":"idCode",
+			"updateDate": "2017-01-05",
+			"things": [
+				{
+					"id": "idCode",
+					"text": "obj1",
+					"type": "thingType",
+					"height": 10,
+					"width": 10,
+					"x": 20,
+					"y": 10,
+					"insideColor": "lightblue",
+					"strokeColor": "black"
+				}
+			],
+			"links": [
+				{
+					"id": "idCode",
+					"type": "linkType",
+					"signifier": "linkSignifier",
+					"origin": "thingID",
+					"destination": "thingID",
+					"originTag": "tagO",
+					"destinationTag": "tagD",
+					"centralTag": "tagC"
+				}
+			]
+		}
+	],
+	"relations": [
+		{
+			"from:" : "modelID",
+			"destination" : "modelID",
+			"type" : "relationType",
+			"centralTag" : "tagC"
+		}
+	]
+}

@@ -1,21 +1,17 @@
 <div id="base_inspector">
   <md-sidenav class="md-sidenav-right" md-component-id="baseInspector" md-disable-backdrop md-whiteframe="4">
-    <!-- Palette Header -->
+    <!-- Inspector Header -->
     <div ng-app="baseInspector" ng-controller="inspectorCtrls">
-
-
       <md-toolbar layout="row" layout-align="end center">
         <p class="md-body-2"> {{text}} </p>
         <md-button class="md-icon-button" aria-label="Close Inspector" ng-click="toggleInspector()">
           <md-icon md-svg-src="app/assets/menu.svg"></md-icon>
         </md-button>
-
-
       </md-toolbar>
-      <div>
+    </div>
 
-        <!-- Palette Content -->
-        <p class="md-body-2"> Default Inspector Content X </p>
+    <!-- Inspector Content -->
+    <div ui-view="inspectordata"></div>
 
   </md-sidenav>
-  </div>
+</div>
