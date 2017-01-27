@@ -40,7 +40,7 @@
     basePalette.directive('palette', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/structure/palettes/base_palette.html',
+            templateUrl: '/webopm/app/structure/palettes/basePalette.html',
         };
     });
 

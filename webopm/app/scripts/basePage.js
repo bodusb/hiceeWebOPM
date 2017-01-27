@@ -84,21 +84,21 @@
     basePage.directive('pageHeader', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/structure/headers/base_header.html',
+            templateUrl: '/webopm/app/structure/headers/baseHeader.html',
         };
     });
 
     basePage.directive('pageTab', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/structure/headers/base_tab.html',
+            templateUrl: '/webopm/app/structure/headers/baseTab.html',
         };
     });
 
     basePage.directive('pageContent', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/structure/pages/content_page.html',
+            templateUrl: '/webopm/app/structure/pages/contentPage.html',
         };
     });
 

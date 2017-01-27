@@ -61,7 +61,7 @@
     baseInspector.directive('inspector', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/structure/inspectors/base_inspector.html',
+            templateUrl: '/webopm/app/structure/inspectors/baseInspector.html',
         };
     });             
 

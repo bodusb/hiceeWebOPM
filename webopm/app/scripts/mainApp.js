@@ -43,47 +43,47 @@
         $stateProvider
             .state('offlineStartPage', {
                 url: '/offlineStartPage',
-                templateUrl: '/app/structure/pages/offlineStart_page.html'
+                templateUrl: '/webopm/app/structure/pages/offlineStartPage.html'
             })
             .state('basePage', {
                 url: '/basePage',
-                templateUrl: '/app/structure/pages/base_page.html'
+                templateUrl: '/webopm/app/structure/pages/basePage.html'
             })
             .state('project', {
                 url: '/project',
-                templateUrl: '/app/structure/pages/base_page.html',
+                templateUrl: '/webopm/app/structure/pages/basePage.html',
                 views: {
-                    '': { templateUrl: '/app/structure/pages/base_page.html' },
-                    'palette@project': { templateUrl: '/app/structure/palettes/project_palette.html' },
-                    'content@project': { templateUrl: '/app/structure/pages/project_page.html' }
+                    '': { templateUrl: '/webopm/app/structure/pages/basePage.html' },
+                    'palette@project': { templateUrl: '/webopm/app/structure/palettes/projectPalette.html' },
+                    'content@project': { templateUrl: '/webopm/app/structure/pages/projectPage.html' }
                 }
             })
             .state('project.inspectproject', {
-                views: { 'inspectordata': { templateUrl: '/app/structure/inspectors/project_inspector.html' } }
+                views: { 'inspectordata': { templateUrl: '/webopm/app/structure/inspectors/projectInspector.html' } }
             })
             .state('project.inspectmodel', {
-                views: { 'inspectordata': { templateUrl: '/app/structure/inspectors/model_inspector.html' } }
+                views: { 'inspectordata': { templateUrl: '/webopm/app/structure/inspectors/modelInspector.html' } }
             })
             .state('project.inspectrelation', {
-                views: { 'inspectordata': { templateUrl: '/app/structure/inspectors/relation_inspector.html' } }
+                views: { 'inspectordata': { templateUrl: '/webopm/app/structure/inspectors/relationInspector.html' } }
             })
             .state('opm', {
                 url: '/opm',
-                templateURl: '/app/structure/pages/base_page.html',
+                templateURl: '/webopm/app/structure/pages/basePage.html',
                 views: {
-                    '': { templateUrl: '/app/structure/pages/base_page.html' },
-                    'palette@opm': { templateUrl: '/app/structure/palettes/opm_palette.html' },
-                    'content@opm': { templateUrl: 'app/structure/pages/opm_page.html' }
+                    '': { templateUrl: '/webopm/app/structure/pages/basePage.html' },
+                    'palette@opm': { templateUrl: '/webopm/app/structure/palettes/opmPalette.html' },
+                    'content@opm': { templateUrl: '/webopm/app/structure/pages/opmPage.html' }
                 }
             })
             .state('opm.inspectthing', {
-                views: { 'inspectordata': { templateUrl: '/app/structure/inspectors/thing_inspector.html' } }
+                views: { 'inspectordata': { templateUrl: '/webopm/app/structure/inspectors/thingInspector.html' } }
             })
             .state('opm.inspectlink', {
-                views: { 'inspectordata': { templateUrl: '/app/structure/inspectors/link_inspector.html' } }
+                views: { 'inspectordata': { templateUrl: '/webopm/app/structure/inspectors/linkInspector.html' } }
             })
             .state('opm.inspectmodel', {
-                views: { 'inspectordata': { templateUrl: '/app/structure/inspectors/model_inspector.html' } }
+                views: { 'inspectordata': { templateUrl: '/webopm/app/structure/inspectors/modelInspector.html' } }
             });
 
     });
