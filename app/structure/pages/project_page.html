@@ -1,7 +1,14 @@
-<p class="md-body-2"> Welcome to the Project Page </p>
+<div ng-app="basePage">
+  <div ng-controller="MinimalCtrl" flex>
+    <go-diagram go-model="model" style="border: solid 1px blue; width:100%; height:500px"></go-diagram>
+  </div>
 
-<div ng-app="basePage" ng-controller="pageController">
+<!--
+  <div  ng-controller="pageController">
     <md-button class="md-raised md-primary" ng-click="viewProj()">Open Proj Inspec</md-button>
     <md-button class="md-raised md-primary" ng-click="viewModel()">Open Model Inspec</md-button>
     <md-button class="md-raised md-primary" ng-click="viewRelation()">Open Relation Inspec</md-button>
+</div>
+-->
+
 </div>
